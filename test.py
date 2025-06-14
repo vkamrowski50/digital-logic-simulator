@@ -4,6 +4,8 @@ from logic.or_gate import OrGate
 from logic.not_gate import NotGate
 from logic.nand_gate import NandGate
 from logic.xor_gate import XorGate
+from logic.nor_gate import NorGate
+from logic.xnor_gate import XnorGate
 
 class TestLogicGates(unittest.TestCase):
     def test_and_gate(self):
@@ -85,6 +87,42 @@ class TestLogicGates(unittest.TestCase):
         g.add_input(0)
         g.add_input(0)
         self.assertEqual(g.compute_output(),0)
+    
+    def test_nor_gate(self):
+        g = NorGate("NOR1")
+        g.add_input(1)
+        g.add_input(1)
+        self.assertEqual(g.compute_output(),0)
+        g = NorGate("NOR2")
+        g.add_input(1)
+        g.add_input(0)
+        self.assertEqual(g.compute_output(),0)
+        g = NorGate("NOR3")
+        g.add_input(0)
+        g.add_input(1)
+        self.assertEqual(g.compute_output(),0)
+        g = NorGate("NOR4")
+        g.add_input(0)
+        g.add_input(0)
+        self.assertEqual(g.compute_output(),1)
+    
+    def test_xnor_gate(self):
+        g = XnorGate("XNOR1")
+        g.add_input(1)
+        g.add_input(1)
+        self.assertEqual(g.compute_output(),1)
+        g = XnorGate("XNOR2")
+        g.add_input(1)
+        g.add_input(0)
+        self.assertEqual(g.compute_output(),0)
+        g = XnorGate("XNOR3")
+        g.add_input(0)
+        g.add_input(1)
+        self.assertEqual(g.compute_output(),0)
+        g = XnorGate("XNOR4")
+        g.add_input(0)
+        g.add_input(0)
+        self.assertEqual(g.compute_output(),1)
 
 if __name__ == "__main__":
     unittest.main()
