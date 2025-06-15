@@ -14,6 +14,9 @@ class HalfAdder:
         self.and_gate.add_input(b)
 
     def compute_outputs(self):
+        '''
+        returns a tuple in form: (sum, carry)
+        '''
         sum_output = self.xor_gate.compute_output()
         carry_output = self.and_gate.compute_output()
         return sum_output, carry_output
