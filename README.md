@@ -1,21 +1,24 @@
-# digital-logic-simulator
+# Digital Logic Simulator
 
-A project on simulating basic digital logic gates (AND, OR, NOT, NAND, XOR) in Python. Contains unit tests.
-Made entirely by Victor Kamrowski.
+Python-based simulator for digital logic circuits. Built entirely from the ground up by **Victor Kamrowski**. This simulator models logic gates and combinational circuits. Uses object-oriented design and unit tests.
 
----
+## ✨ Features
 
-## How to Run
+- Logic gate simulations for:
+  - AND, OR, NOT, NAND, NOR, XOR, XNOR
+- Combinational Circuits:
+  - Half Adder, Full Adder (more to come)
+- Object-oriented design / architecture
+- Unit tests with 'unittest'
+
+## 🚀 How to Run
 
 to be added
 
----
-
 ## Future Plans
 
-- Add more gates such as NOR and XNOR. Add multiplexers, decoders, and more combinational circuits.
-- Simulate memory components through sequential logic elements such as flip-flops and latches.
-- Develop GUI to visually design and test digital circuits.
-- Add ability to simulate large scale digital systems through chaining gates.
-- Logging/debugging features ???
-- Export designs (HDLs???) ???
+- more combinationals (multiplexers, decoders, ALUs, ...)
+- sequential logic (flip-flops, latches, counters and registers, ...)
+- gui for circuit design
+- debugging tools
+- export to HDLs eventually
