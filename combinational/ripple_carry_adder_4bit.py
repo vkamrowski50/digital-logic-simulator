@@ -22,15 +22,15 @@ class RippleCarryAdder4Bit:
 
     def compute_outputs(self):
         '''
-        returns a tuple in form(Sum0,Sum1,Sum2,Sum3,Sum4,C-Out)
+        returns a tuple in form(Sum0,Sum1,Sum2,Sum3,C-Out)
         Sum0 is least significant bit but is first in the tuple
         '''
-        FullAdder1.add_inputs(self.a[0],self.b[0],cin)
-        sum0, c1 = FullAdder1.compute_outputs()
-        FullAdder2.add_inputs(self.a[1],self.b[1],c1)
-        sum1, c2 = FullAdder2.compute_outputs()
-        FullAdder3.add_inputs(self.a[2],self.b[2],c2)
-        sum2, c3 = FullAdder3.compute_outputs()
-        FullAdder4.add_inputs(self.a[3],self.b[3],c3)
-        sum3, c4 = FullAdder4.compute_outputs()
+        self.FullAdder1.add_inputs(self.a[0],self.b[0],self.cin)
+        sum0, c1 = self.FullAdder1.compute_outputs()
+        self.FullAdder2.add_inputs(self.a[1],self.b[1],c1)
+        sum1, c2 = self.FullAdder2.compute_outputs()
+        self.FullAdder3.add_inputs(self.a[2],self.b[2],c2)
+        sum2, c3 = self.FullAdder3.compute_outputs()
+        self.FullAdder4.add_inputs(self.a[3],self.b[3],c3)
+        sum3, c4 = self.FullAdder4.compute_outputs()
         return sum0,sum1,sum2,sum3,c4
