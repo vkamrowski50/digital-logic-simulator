@@ -17,9 +17,9 @@ To run unit tests:
 
 1. Open project root directory in terminal after cloning
 2. Use '-m' flag to run tests as modules:
-  '''bash
+  ```bash
   python3 -m tests.test_combinational
-  '''
+  ```
 
 more tba
 
