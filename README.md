@@ -7,13 +7,21 @@ Python-based simulator for digital logic circuits. Built entirely from the groun
 - Logic gate simulations for:
   - AND, OR, NOT, NAND, NOR, XOR, XNOR
 - Combinational Circuits:
-  - Half Adder, Full Adder (more to come)
+  - Half Adder, Full Adder, 4-Bit Ripple Carry Adder (more to come)
 - Object-oriented design / architecture
 - Unit tests with 'unittest'
 
 ## 🚀 How to Run
 
-to be added
+To run unit tests:
+
+1. Open project root directory in terminal after cloning
+2. Use '-m' flag to run tests as modules:
+  '''bash
+  python3 -m tests.test_combinational
+  '''
+
+more tba
 
 ## Future Plans
 
