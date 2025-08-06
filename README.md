@@ -21,7 +21,7 @@ To run unit tests:
   python3 -m tests.test_combinational
   ```
 
-# Motivation
+## Motivation
 
 This project was part of my effort to build a strong foundation in computer architecture and digital systems. Working up from logic gates to full circuits. In preperation for this project and my ECE path, I read **Code: The Hidden Language of Computer Hardware and Software** by **Charles Petzold**.
 
@@ -34,7 +34,7 @@ This project was part of my effort to build a strong foundation in computer arch
 - debugging tools
 - export to HDLs eventually
 
-# Tech Stack
+## Tech Stack
 
 - Python 3.x
 - unittest
