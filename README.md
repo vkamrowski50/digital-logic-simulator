@@ -2,7 +2,7 @@
 
 Python-based simulator for digital logic circuits. Built entirely from the ground up by **Victor Kamrowski**. This simulator models logic gates and combinational circuits. Uses object-oriented design and unit tests.
 
-## ✨ Features
+## Features
 
 - Logic gate simulations for:
   - AND, OR, NOT, NAND, NOR, XOR, XNOR
@@ -11,7 +11,7 @@ Python-based simulator for digital logic circuits. Built entirely from the groun
 - Object-oriented design / architecture
 - Unit tests with 'unittest'
 
-## 🚀 How to Run
+## How to Run
 
 To run unit tests:
 
@@ -21,7 +21,10 @@ To run unit tests:
   python3 -m tests.test_combinational
   ```
 
-more tba
+# Motivation
+
+This project was part of my effort to build a strong foundation in computer architecture and digital systems. Working up from logic gates to full circuits. In preperation for this project and my ECE path, I read **Code: The Hidden Language of Computer Hardware and Software** by **Charles Petzold**.
+
 
 ## Future Plans
 
@@ -30,3 +33,9 @@ more tba
 - gui for circuit design
 - debugging tools
 - export to HDLs eventually
+
+# Tech Stack
+
+- Python 3.x
+- unittest
+- OOP
